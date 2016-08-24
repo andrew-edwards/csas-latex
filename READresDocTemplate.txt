@@ -181,6 +181,9 @@ resDocSty.sty - this is the style file that sets some of the
  much as I could, and it may contain a few superflous things 
  (e.g. the tocloft package doesn't get used).
 
+resDocSty-rh.sty - Rowan Haigh's changes from mine  for Silvergray Rockfish
+ and then Shortspine Rockfish assessments. As sent to me 24/8/16.
+
 POP3CDexample.tex - this should work. It's based on:
 
 POP3CDresDoc.tex which was my final version, but needs figures
@@ -228,6 +231,8 @@ resDoc.bst - bib style file for the references. One thing I couldn't
  Schnute and Richards before Schnute et al. 2001
  Westrheim et al. 1968 before 1972.
 
+resDoc-rh.bst - Rowan Haigh's updated file for Silvergray Rockfish
+ and then Shortspine Rockfish assessments. As sent to me 24/8/16.
 
 In case you need it, we had a few figures that we couldn't produce
  properly as postscript, but as .png or .pdf. For that we constructed

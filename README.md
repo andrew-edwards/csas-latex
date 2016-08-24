@@ -15,6 +15,8 @@ I'm hosting all this on GitHub so that others can make and share refinements to 
 
 As of September 2014, two Pacific assessments (Rock Sole and Silvergray) have been submitted to our local CSAS office, but they haven't attempted the 'web accessbility' part yet (based on the instructions in READresDocTemplate.txt). 
 
+READaccessforCSAP.txt - extracting from READresDocTemplate.txt the Web Accessibility stuff to give to CSAP office as they may do it now for the .pdf's (as of Feb 2015). No need to copy to GitHub.
+
 __INSTRUCTIONS IF YOU DO NOT USE GIT__
 
 You can download all these files by clicking on 'Download Zip' on the right-hand side of this web page. The resulting .zip file will pretty much be the same as the one that I emailed out in April 2014. You can then use the example I gave and modify it as necessary.

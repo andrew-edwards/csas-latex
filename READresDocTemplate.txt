@@ -182,7 +182,10 @@ resDocSty.sty - this is the style file that sets some of the
  (e.g. the tocloft package doesn't get used).
 
 resDocSty-rh.sty - Rowan Haigh's changes from mine  for Silvergray Rockfish
- and then Shortspine Rockfish assessments. As sent to me 24/8/16.
+ and then Shortspine Rockfish assessments, looks like last edited
+ 10/8/16. As sent to me 24/8/16. Have compared differences and am now
+ incorporating some into my main .sty file, and including but commenting
+ out parts that are good to keep for possible future reference.
 
 resDocSty-cg.sty - Chris Grandin's version, for Arrowtooth Flounder, 
  downloaded from his GitHub fork on 24/8/16; looks like last edited (according

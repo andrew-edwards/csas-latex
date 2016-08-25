@@ -184,6 +184,10 @@ resDocSty.sty - this is the style file that sets some of the
 resDocSty-rh.sty - Rowan Haigh's changes from mine  for Silvergray Rockfish
  and then Shortspine Rockfish assessments. As sent to me 24/8/16.
 
+resDocSty-cg.sty - Chris Grandin's version, for Arrowtooth Flounder, 
+ downloaded from his GitHub fork on 24/8/16; looks like last edited (according
+ to GitHub) on 10/12/15. May be similar to Rowan's.
+
 POP3CDexample.tex - this should work. It's based on:
 
 POP3CDresDoc.tex which was my final version, but needs figures
@@ -233,6 +237,10 @@ resDoc.bst - bib style file for the references. One thing I couldn't
 
 resDoc-rh.bst - Rowan Haigh's updated file for Silvergray Rockfish
  and then Shortspine Rockfish assessments. As sent to me 24/8/16.
+
+resDoc-cg.bst - Chris Grandin's version, for Arrowtooth Flounder, 
+ downloaded from his GitHub fork on 24/8/16; looks like last edited (according
+ to GitHub) on 20/4/15. May be similar to Rowan's. 
 
 In case you need it, we had a few figures that we couldn't produce
  properly as postscript, but as .png or .pdf. For that we constructed

@@ -48,7 +48,4 @@ __Next actions / wish list__
 
 updated resDocSty.sty - line 60 change indention from 0.5 to 0cm (CSAS does not want captions indented after first line). 
 
-###Branches
-
-**incorporateRH** - incorporate Rowan's latest into mine, commenting out stuff of his that I don't want now but is useful to keep in so it's all in one place.
 

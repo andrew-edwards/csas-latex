@@ -154,10 +154,20 @@
 			     %  paragraphs (since not indenting).
                              % For POP 2011 I did this, presumably
                              %  because we did it in the Word version.
+                             % See resDocSty-rh.sty if want it all in pt units
 
 \def\headc{\vspace{-2ex}} % contraction after 'fake' subsubheading
 % \def\subsub#1{\noindent {\bf #1} \headc}    % fake subsubheading
 \def\subsubsub#1{\vspace{1ex} \noindent {\underline{#1}} \vspace{1ex}}    % fake subsubsubheading
+
+% From Rowan, and see resDocSty-rh.sty for his settings using pt. 
+% http://tex.stackexchange.com/questions/64756/what-is-glue-stretching
+% In TeX any glue is composed by a fixed part, a stretchable part and a
+% shrinkable part. Each of these parts can be zero.
+% The general form to express a glue is: <fixed part> plus <stretchable part>
+% minus <shrinkable part>. Each of these parts can be expressed in any of TeX 
+% units (mm, cm, pt, em, etc.). For example 2cm plus 2mm minus 1mm.
+
 
 % Section Headings. Adapting from
 % http://help-csli.stanford.edu/tex/latex-sections.shtml#section
@@ -180,8 +190,10 @@
 {section}{1}{0mm}                 % name, level, indent
 {-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
 {2.3ex \@plus.2ex}                % afterskip
-{\normalfont\large\bfseries\MakeUppercase}} % style
+{\centering\normalfont\large\bfseries\MakeUppercase}} % style
 % Doesn't force upper case in Table of Contents though.
+% Then for Appendices have to make this not centered (as Chapter headings
+%  are the highest level).
 
 
 \renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}
@@ -194,16 +206,29 @@
 % % {-3.25ex plus -1ex minus -.2ex}{1.5ex plus .2ex} - original
 {\normalfont\bf\underline}}     %  to underline
 %% {\normalfont\bf}}             % To leave out underlining (but
-				%  that would break the rules)
+				%  that would break the rules) [RH: no longer]
+
+% http://tex.stackexchange.com/questions/30757/change-the-word-chapter-to-something-else:
+% \renewcommand{\@chapapp}{Appendix} 
+%      since that's what fancyhdr uses as \chaptername.
+% \addto\captionsenglish{\renewcommand{\chaptername}{Lecture}} % needs babel
+% \addto\caption{\renewcommand{\chaptername}{Lecture}} % and fan
+% \renewcommand{\chaptername}{Appendix}   % - never worked
+
 
 % For Appendices
-\renewcommand{\chapter}{\@startsection
+\renewcommand{\chapter}{\@startsection     % \protect{Appendix} before \@
+                                           %  placed it before title
 {chapter}{1}{0mm}                 % name, level, indent
 {-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
 {2.3ex \@plus.2ex}                % afterskip
 {\centering\normalfont\large\bfseries\MakeUppercase}} % style
 
-% \renewcommand{\chaptername}{Appendix}   % - never worked
+
+
+
+
+
 % It doesn't like \subsubsubsection.
 
 

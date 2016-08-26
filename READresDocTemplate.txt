@@ -190,7 +190,8 @@ resDocSty-rh.sty - Rowan Haigh's changes from mine  for Silvergray Rockfish
 
 resDocSty-cg.sty - Chris Grandin's version, for Arrowtooth Flounder, 
  downloaded from his GitHub fork on 24/8/16; looks like last edited (according
- to GitHub) on 10/12/15. May be similar to Rowan's.
+ to GitHub) on 10/12/15. May be similar to Rowan's. Yes, and Andy thinks any of
+ Chris's edits are essentially Rowan's, and are now in resDocSty.sty.
 
 POP3CDexample.tex - this should work. It's based on:
 

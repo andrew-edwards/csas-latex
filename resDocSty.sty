@@ -130,6 +130,7 @@
 			%  but that's the rules, which of course
 			%  exist because right justified in Word
 			%  always looks so bad).
+\raggedbottom    
 			% I had also tried the newer \RaggedRight
 			%   from the ragged2e package, but it 
 			%   seems to introduce lots of hyphens.
@@ -293,7 +294,95 @@
 \renewcommand{\rmdefault}{phv}   % Arial
 \renewcommand{\sfdefault}{phv}   % Arial
 
+% From RH:
+% % If using pdfLaTeX (only to get DFO-style hyperlinks in Bibliogrpahy), eps files need to be converted to pdf (RH).
+% % PDF files are only created when using pdflatex; doesn't hurt to load this package when using latex compiler.
+% %\usepackage{eps2pdf}
+% 
+% % If using XeLateX, redefine default font to Arial (RH)
+% %\usepackage{xltxtra} % xltxtra loads fontspec + xunicode.
+% %\setmainfont{Arial}
+
+
 % I haven't checked this, but try for punctuation of references
 %  (from a .tex file by Ian Jonsen):
 % \bibpunct[, ]{(}{)}{;}{a}{}{,}
 % \bibstyle{cjfas}
+
+
+% Remaining is all from Rowan, commenting out.
+% %% RH (2016-02-16)----------------------------------------------------
+% %% CSAP headers and footers - see above where Andy had invoked fancy to start the ball rolling
+% %% http://texblog.org/2007/11/07/headerfooter-in-latex-with-fancyhdr/
+% %%--------------------------------------------------------------------
+\fancypagestyle{csapfancy}{%
+% \fancyhead[L]{}%{DRAFT -- Non-citable working paper}
+% \fancyhead[R]{}%{CSAP WP2016zzzxx}
+% \fancyfoot[L]{}%{Appendix \thechapter -- Model Results}
+% \fancyfoot[R]{}%{\Sexpr{paste0(sppname," (",area.name,")")}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}}
+%
+ 
+% %% In your document just after the \chapter command (or first \section command)
+% %% define your headers and footers so they can be retained after landscape
+% %%  pages
+%  Andy not bothering, just reset lfoot and rfoot if necessary; rfoot changes
+%  between appendices anyway.
+% % \newcommand{\LH}{DRAFT -- Non-citable working paper}  % Set to {} for final ResDoc
+% % \newcommand{\RH}{CSAP WP2014GRF04}
+% % \newcommand{\LF}{Appendix \thechapter -- Model Results}
+% % \newcommand{\RF}{Shortspine Thornyhead (BC coast)}
+% 
+% 
+% %% RH (2016-02-16)----------------------------------------------------
+% %% CSAS's penchant for landscape with borders along the long edge.
+% %% http://tex.stackexchange.com/questions/9071/how-to-translate-and-rotate-the-heading-of-landscaped-pages
+% %% http://handyfloss.net/2007.05/latex-the-textpos-package/
+% %% -------------------------------------------------------------------
+% \usepackage{pdflscape} % landscape pages
+\usepackage[absolute]{textpos}
+% 
+\setlength{\TPHorizModule}{8.5in}
+\setlength{\TPVertModule}{11.0in}
+% 
+\fancypagestyle{csaplscape}{ 
+\fancyhf{}  % clear all header and footer fields 
+\fancyfoot{}%
+\begin{textblock}{1}(0.1,0.0909){\rotatebox{90}{\rule{9in}{0.25pt}}}\end{textblock}
+\begin{textblock}{1}(0.9,0.0909){\rotatebox{90}{\rule{9in}{0.25pt}}}\end{textblock}
+\begin{textblock}{0.05}(0.925,0.5){\rotatebox{90}{\thepage}}\end{textblock}
+\renewcommand{\headrulewidth}{0pt}% get rid of lines along sides of landscape page
+\renewcommand{\footrulewidth}{0pt}
+ }
+% 
+% %% In your CSAP manuscript, when you want a landscape page:
+% %  \newgeometry{hmargin=1in,vmargin=1in}
+% %  \thispagestyle{csaplscape}
+% %  \pagestyle{csaplscape}
+% %  \begin{landscape}
+% %  <<your stuff here>>
+% %  \end{landscape}
+% %  \restoregeometry
+% %  \pagestyle{csapfancy}    % Andy not doing
+% %  \lhead{\LH}\rhead{\RH}\lfoot{\LF}\rfoot{\RF}   % Or whatever they should be
+% %%-----------------------------------------End landscape nonsense
+% 
+% %%====================================================================
+% %% How can I change the margins for only part of the text?
+% %% http://tex.stackexchange.com/questions/588/how-can-i-change-the-margins-for-only-part-of-the-text
+% \def\changemargin#1#2#3{\list{}{\rightmargin#2\leftmargin#1\topsep=#3}\item[]}
+% \let\endchangemargin=\endlist
+% % Implementation:
+% %    \begin{changemargin}{<arg>}{<arg>}
+% %    \end{changemargin} 
+% % where <arg> is the distance you want to include on the margin (the first one
+% % defines the right-hand side margin, and the second defines the left-hand side one).
+% % So, for example, to add 0.5 cm to the margins on either side, you would have:
+% %    \begin{changemargin}{0.5cm}{0.5cm} 
+% %       your text here  
+% %    \end{changemargin}
+% %%--------------------------------------------------------------------
+
+

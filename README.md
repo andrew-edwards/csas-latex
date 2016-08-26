@@ -48,7 +48,6 @@ __Next actions / wish list__
 
 updated resDocSty.sty - line 60 change indention from 0.5 to 0cm (CSAS does not want captions indented after first line). 
 
-__Branches__
+###Branches
 
-**incorporateRH** - incorporating from Rowan's latest to use for Redbanded assessment.
-
+**incorporateRH** - incorporating from Rowan's latest to use for Redbanded assessment. Commenting out stuff of his that I don't want now but is useful to keep in so it's all in one place.

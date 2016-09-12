@@ -51,3 +51,24 @@ updated resDocSty.sty - line 60 change indention from 0.5 to 0cm (CSAS does not 
 ###Branches
 
 **incorporateRH** - incorporating from Rowan's latest to use for Redbanded assessment. Commenting out stuff of his that I don't want now but is useful to keep in so it's all in one place.
+
+
+###Bibliography
+
+From resDoc.bst:
+
+The ordering of papers for 2 and >2 authors is fiddly and maybe not possible to automate, and so just do manually prior to submission
+(edit the order of the .bst file). The CJFAS rules are:
+
+References must be listed in alphabetical order according to the name of the first author and not numbered. References with the same first author are listed in the following order. 
+
+(i) Papers with one author only are listed first in chronological order, beginning with the earliest paper. 
+
+(ii) Papers with dual authorship follow and are listed in alphabetical order by the last name of the second author. 
+
+(iii) Papers with three or more authors appear after the dual-authored  papers and are arranged chronologically. 
+
+[For Redbanded I had to re-order Edwards et al. and Yamanaka et al. references.]
+
+Doing http:// links (CSAS wants them to be live and clickable) seems to work automatically when you make a .pdf. They don't have to be underlined. Though I think that has since changed and they don't want the http text visible, which is tricky. 
+

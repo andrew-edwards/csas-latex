@@ -68,7 +68,7 @@ References must be listed in alphabetical order according to the name of the fir
 
 (iii) Papers with three or more authors appear after the dual-authored  papers and are arranged chronologically. 
 
-[For Redbanded I had to re-order Edwards et al. and Yamanaka et al. references, and took out http links for some.]
+[For Redbanded I had to re-order Edwards et al. (switch a and b?) and Yamanaka et al. references, and took out http links for some.]
 
 Doing http:// links (CSAS wants them to be live and clickable) seems to work automatically when you make a .pdf. They don't have to be underlined. Though I think that has since changed and they don't want the http text visible, which is tricky. For Redbanded I've taken them out.
 

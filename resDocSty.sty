@@ -386,3 +386,18 @@
 % %%--------------------------------------------------------------------
 
 
+% Indentation and numbering of enumerated or bullet-point lists
+\usepackage{enumerate}   
+% These are done manually here -- doesn't perfectly flush left since
+%  need to allow space if you get up to double-digit enumeration. Is fine
+%  though.
+\setlength{\leftmargini}{6mm}        % not actually based on enumerate package
+\setlength{\leftmarginii}{4mm}       %  (had already been done). 
+\setlength{\leftmarginiii}{4mm}
+\setlength{\leftmarginiv}{4mm}
+
+% In .tex preamble:
+% \renewcommand{\labelitemii}{$\circ$}    % Second level of \begin{itemize}
+                                          %  to be o not the default star.
+
+

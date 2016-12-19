@@ -48,6 +48,14 @@ HOW TO WRITE A WORKING PAPER (FOR REVIEW AT A CSAS MEETING) IN LATEX
 
 5. So, for peer review submit a .pdf. It doesn't need to be Web Accessible etc.
 
+MINOR RULES TO ABIDE BY
+***********************
+
+Some thing will be automated by the style file, but minor things include:
+
+1. Personal communications: need workplace, e.g. (Stephen Wischniowski, 
+ Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
+
 
 HOW TO FINALISE THE RESEARCH DOCUMENT
 *************************************

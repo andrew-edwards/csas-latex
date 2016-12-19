@@ -858,7 +858,7 @@ FUNCTION {format.journal.pages}
     { swap$ duplicate$ empty$
         { pop$ pop$ format.pages }
         {
-          ": " *
+          ". " *
           swap$
           n.dashify
           "pages" bibinfo.check
@@ -873,7 +873,7 @@ FUNCTION {format.journal.eid}
   duplicate$ empty$ 'pop$
     { swap$ duplicate$ empty$ 'skip$
       {
-          ": " *
+          ". " *
       }
       if$
       swap$ *

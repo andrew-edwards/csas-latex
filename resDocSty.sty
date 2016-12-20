@@ -85,12 +85,13 @@
 % %% Note: in your *.bib file, the Title field needs to contain: \urldfo{http://www.somewhere.ca}{The actual title of the aricle}
 % %% See: http://tex.stackexchange.com/questions/76174/set-doi-link-on-journal-name-with-bibtex-bst
 % %% ----------------------------------------------
-% \usepackage{natbib}                     % use resDoc.bst file: e.g., \bibliographystyle{resDoc}
+\usepackage{natbib}                     % use resDoc.bst file: e.g., \bibliographystyle{resDoc}
 % \setlength{\bibhang}{1cm}               % set the DFO overhang
 % \setlength{\bibsep}{6pt}                % paragraph spacing
-% \usepackage[breaklinks=true,bookmarksopen,bookmarksdepth=3]{hyperref}  % CSAP wants hyperlinks in references
+\usepackage[breaklinks=true,bookmarksopen,bookmarksdepth=3]{hyperref}
+  % CSAP wants hyperlinks in references  % Think this may do the bookmarks
 % \usepackage[normalem]{ulem}             % The ulem package: underlining for emphasis
-% \hypersetup{colorlinks, plainpages=true, linkcolor=black, citecolor=black, urlcolor=blue}
+\hypersetup{colorlinks, plainpages=true, linkcolor=black, citecolor=black, urlcolor=blue}
 % % Create a blue underlined hyperlink (e.g., http://tex.stackexchange.com/questions/233668/new-ulem-command-not-working)
 % \newcommand\bluline{\bgroup\markoverwith
 %   {\textcolor{blue}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon} % wtf
@@ -106,8 +107,8 @@
 %% ***End of Rowan's that Andy commenting out***
 
 \usepackage{nccmath}    % from web for fleqn
-\usepackage{natbib}     % need for bibliography; I think affects how
-                        %  references are cited in the text.
+% \usepackage{natbib}     % need for bibliography; I think affects how
+                        %  references are cited in the text. Needed earlier
 \usepackage[pagewise]{lineno}     % if you want to add line numbers in
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} 
 			%  page margins

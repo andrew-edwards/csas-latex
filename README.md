@@ -15,6 +15,8 @@ I'm hosting all this on GitHub so that others can make and share refinements to 
 
 As of September 2014, two Pacific assessments (Rock Sole and Silvergray) have been submitted to our local CSAS office, but they haven't attempted the 'web accessbility' part yet (based on the instructions in READresDocTemplate.txt). 
 
+The Redbanded Rockfish assessment is currently going through CSAS (Sep-Dec 2016), and several refinements to the style files have been made for that, but some refinements need to be made to the actual .tex files which I haven't hosted here. I could make a working example from those, if time. **Contact Andy if that would be useful to you**, as the POP ones are a bit dated.
+
 READaccessforCSAP.txt - extracting from READresDocTemplate.txt the Web Accessibility stuff to give to CSAP office as they may do it now for the .pdf's (as of Feb 2015). No need to copy to GitHub.
 
 __INSTRUCTIONS IF YOU DO NOT USE GIT__

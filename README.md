@@ -88,14 +88,14 @@ Add as an issue: To do manually: the .bbl file (or the version it was based on) 
 
 Partly from doing Redbanded Rockfish formatting edits:
 
-\sum seemed to cause encoding issues in the final .pdf, so have created 
+1.\sum seemed to cause encoding issues in the final .pdf, so have created 
 	
 	\renewcommand{\sum}{{\mathlarger{\mathlarger{\mathlarger{\Sigma}}}}}
 
 as a workaround, which isn't ideal but works. Can't use in $..$. Needs \usepackage{relsize}
 
 
-To test the Web Accessibility (in Adobe Acrobat XI Pro):
+2.To test the encoding part of Web Accessibility (in Adobe Acrobat XI Pro):
 
 View-Tools-Accessibility (Alt V T A)
 
@@ -103,7 +103,15 @@ Accessibility window: Full Check, Start
 
 Document - Right-click Tagged - Fix - 'Some difficult pages' okay
 
-Page Content - expand - Character Encoding shows ones that aren't encoded. 'A few' are okay with CSAS.
+Page Content - expand - Character Encoding shows ones that aren't encoded. Try and fix (have to do in tex not the .pdf; not sure what to do with Chris's current ones). 'A few' are okay with CSAS.
+
+3.Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking.
+
+4.No dotted lines in Tables.
+
+5.No side-by-side figures with separate captions; i.e. must all be the same figure. See \twofigRHb in Redbanded.
+
+6.Need Chris's template for properly making Table of Contents and labelling Appendices. He keeps that in Latex and so gets the Abstract translation and puts that into .tex.
 
 
 

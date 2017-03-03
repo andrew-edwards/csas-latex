@@ -57,7 +57,11 @@
 
 % 
 % %http://tex.stackexchange.com/questions/664/why-should-i-use-usepackaget1fontenc
-% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}   % Andy trying to see if it properly encodes the
+                           %  \sum signs, and \{ and \( . Didn't help.
+
+% \usepackage{unicode-math}   % Andy trying again to fix above problem. Nope, 
+                              %  needs XeLaTeX.
 % %\usepackage{lmodern}
 % %% http://www.ctan.org/tex-archive/fonts/urw/arial/
 % %% Grab the TDS-compliant zip and unzip in you localtexmf directory (which is registered as one of your MiKTeX roots).

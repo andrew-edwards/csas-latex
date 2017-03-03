@@ -1,6 +1,8 @@
 csas-latex
 ==========
 
+Need to incorporate Chris's latest version, and create a simpler example document. Putting some new (2017) tips and tricks at the bottom of this file. 
+
 Latex style file and template for CSAS Research Documents
 
 __Initial commit 19th September 2014, Andrew Edwards__
@@ -81,4 +83,27 @@ For Redbanded had to manually (in the .bbl file, so don't re-bibtex):
 Doing http:// links (CSAS wants them to be live and clickable) seems to work automatically when you make a .pdf. They don't have to be underlined. Though I think that has since changed and they don't want the http text visible, which is tricky. For Redbanded I've taken them out.
 
 Add as an issue: To do manually: the .bbl file (or the version it was based on) incorrectly strips out hyphens in hyphenated first names. Doing manually for Redbanded in for Lecomte (2013), both J.-B. and M.-P.
+
+###Tips and tricks
+
+Partly from doing Redbanded Rockfish formatting edits:
+
+\sum seemed to cause encoding issues in the final .pdf, so have created 
+	
+	\renewcommand{\sum}{{\mathlarger{\mathlarger{\mathlarger{\Sigma}}}}}
+
+as a workaround, which isn't ideal but works. Can't use in $..$. Needs \usepackage{relsize}
+
+
+To test the Web Accessibility (in Adobe Acrobat XI Pro):
+
+View-Tools-Accessibility (Alt V T A)
+
+Accessibility window: Full Check, Start
+
+Document - Right-click Tagged - Fix - 'Some difficult pages' okay
+
+Page Content - expand - Character Encoding shows ones that aren't encoded. 'A few' are okay with CSAS.
+
+
 

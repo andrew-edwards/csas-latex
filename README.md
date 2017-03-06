@@ -113,5 +113,7 @@ Page Content - expand - Character Encoding shows ones that aren't encoded. Try a
 
 6.Need Chris's template for properly making Table of Contents and labelling Appendices. He keeps that in Latex and so gets the Abstract translation and puts that into .tex.
 
+7. Personal communications need a work location also; e.g. (Stephen Wischniowski, Pacific Biological Station, DFO, Nanaimo, BC, pers.~comm.)
+
 
 

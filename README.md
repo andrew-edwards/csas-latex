@@ -107,7 +107,7 @@ Page Content - expand - Character Encoding shows ones that aren't encoded. Try a
 
 3.Tables that break across pages - may or may not be allowed to have the \longtable footer and subsequent header. Brittany is checking.
 
-4.No dotted lines in Tables.
+4.No dotted lines in Tables or (I think) vertical lines.
 
 5.No side-by-side figures with separate captions; i.e. must all be the same figure. See \twofigRHb in Redbanded.
 

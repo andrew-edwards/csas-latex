@@ -201,7 +201,7 @@
 % See below for help
 
 \renewcommand{\section}{\@startsection
-{section}{1}{0pt}                 % name, level, indent
+{section}{1}{0mm}                 % name, level, indent
 % {-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
 {2mm}                              % beforeskip
 {0.1mm}                               % afterskip
@@ -212,6 +212,8 @@
 %  are the highest level).
 
 
+% Andy had to redo this one for Appendices in his main .tex, but
+%  I think Chris has a better way, so we shouldn't have to.
 \renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}
 % {-3.25ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
 % {1ex}{0.1ex plus -2ex}

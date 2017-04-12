@@ -397,18 +397,62 @@
 % %%--------------------------------------------------------------------
 
 
+% Commenting out here since Chris's latest (below) is more complete:
 % Indentation and numbering of enumerated or bullet-point lists
-\usepackage{enumerate}   
+%\usepackage{enumerate}   
 % These are done manually here -- doesn't perfectly flush left since
 %  need to allow space if you get up to double-digit enumeration. Is fine
 %  though.
-\setlength{\leftmargini}{6mm}        % not actually based on enumerate package
-\setlength{\leftmarginii}{4mm}       %  (had already been done). 
-\setlength{\leftmarginiii}{4mm}
-\setlength{\leftmarginiv}{4mm}
+%\setlength{\leftmargini}{6mm}        % not actually based on enumerate package
+%\setlength{\leftmarginii}{4mm}       %  (had already been done). 
+%\setlength{\leftmarginiii}{4mm}
+%\setlength{\leftmarginiv}{4mm}
 
 % In .tex preamble:
 % \renewcommand{\labelitemii}{$\circ$}    % Second level of \begin{itemize}
                                           %  to be o not the default star.
+% From Chris's latest:
+%% Indentation, types, and numbering of enumerated or bullet-point lists
+\usepackage{enumerate}
+%% These are done manually here -- doesn't perfectly flush left since
+%%  need to allow space if you get up to double-digit enumeration. Is fine
+%%  though.
+\setlength{\leftmargini}{6mm}  %% not actually based on enumerate package
+\setlength{\leftmarginii}{4mm} %%  (had already been done).
+\setlength{\leftmarginiii}{4mm}
+\setlength{\leftmarginiv}{4mm}
+
+%% The following controls the look of the second-level in an enumeration list
+\renewcommand{\labelenumii}{\theenumii}
+%% This will make list items like 1.1, 1.2, etc
+%%\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+%% This will make list items like A., B., etc.
+%%\renewcommand{\theenumii}{\Alph{enumii}.}
+%% This will make list items like a., b., etc.
+\renewcommand{\theenumii}{\alph{enumii}.}
+
+%% The following controls the look of the second-level in an enumeration list
+%% This will make list items circles instead of stars
+\renewcommand{\labelitemii}{$\circ$}
+%% Sets up the levels of lists with types to use for each,
+%%  e.g. level 2 uses small alphabetic characters and
+%%  level 3 uses roman numerals.
+\usepackage{enumitem}
+\newlist{resdoclist}{enumerate}{5}
+\setlist[resdoclist]{
+  align=left,        % Left align labels
+  topsep=0pt,        % Vertical space before the list
+  labelindent=0pt,   % Space betw. margin of list and label
+  %% Even though the specs say 0.25 inches for labelsep, need 0.01 here.
+  labelsep*=0.01in,  % Space betw. numbers and text (note * is req'd)
+  leftmargin=!,      % No space betw. margin of list and following lines
+  itemindent=0pt     % Hanging indentation (after first line)
+}
+\setlist[resdoclist,1]{label=\arabic*.}
+\setlist[resdoclist,2]{label=\alph*.}
+\setlist[resdoclist,3]{label=\roman*.}
+\setlist[resdoclist,4]{label=\arabic*.}
+\setlist[resdoclist,5]{label=\alph*.}
+\setlist{nosep} % Remove all space between list items globally
 
 

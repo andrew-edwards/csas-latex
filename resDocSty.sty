@@ -162,7 +162,7 @@
 %  'outside' corner, so have a Google around.
 
 \setlength\parindent{0pt}    % To not indent paragraphs.
-\parskip 2ex   % was 3ex     % To increase white space between 
+\parskip 9pt   % was 3ex     % To increase white space between 
 			     %  paragraphs (since not indenting).
                              % For POP 2011 I did this, presumably
                              %  because we did it in the Word version.
@@ -193,15 +193,19 @@
 
 \newcommand{\nonumsection}{\@startsection
 {section}{1}{0mm}                 % name, level, indent
-{-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
-{2.3ex \@plus.2ex}                % afterskip
+%{-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
+{2mm}                              % beforeskip
+{0.1mm}                            % afterskip
+%{2.3ex \@plus.2ex}                % afterskip
 {\centering\normalfont\large\bfseries\MakeUppercase}} % style
 % See below for help
 
 \renewcommand{\section}{\@startsection
-{section}{1}{0mm}                 % name, level, indent
-{-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
-{2.3ex \@plus.2ex}                % afterskip
+{section}{1}{0pt}                 % name, level, indent
+% {-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
+{2mm}                              % beforeskip
+{0.1mm}                               % afterskip
+% {2.3ex \@plus.2ex}                % afterskip
 {\centering\normalfont\large\bfseries\MakeUppercase}} % style
 % Doesn't force upper case in Table of Contents though.
 % Then for Appendices have to make this not centered (as Chapter headings
@@ -209,14 +213,20 @@
 
 
 \renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}
-{-3.25ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
+% {-3.25ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
 % {1ex}{0.1ex plus -2ex}
+{1mm}                              % beforeskip
+{0.1mm}                               % afterskip
 {\normalfont\bf\MakeUppercase}}
+%  \vspace*{-50\p@} - Chris said to try, but don't need to (unless this 
+                                   % not acceptable).
+
 
 \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}
-{-2ex plus -1ex minus -.2ex}{1.5ex plus .2ex}
+{1mm}                              % beforeskip
+{0.1mm}                            % afterskip
 % % {-3.25ex plus -1ex minus -.2ex}{1.5ex plus .2ex} - original
-{\normalfont\bf\underline}}     %  to underline
+{\normalfont\bf}}     %  to underline
 %% {\normalfont\bf}}             % To leave out underlining (but
 				%  that would break the rules) [RH: no longer]
 
@@ -228,12 +238,14 @@
 % \renewcommand{\chaptername}{Appendix}   % - never worked
 
 
-% For Appendices
+% For Appendices, though should prob use Chris's latest.
 \renewcommand{\chapter}{\@startsection     % \protect{Appendix} before \@
                                            %  placed it before title
 {chapter}{1}{0mm}                 % name, level, indent
-{-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
-{2.3ex \@plus.2ex}                % afterskip
+{1mm}                              % beforeskip
+{0.1mm}                            % afterskip
+%{-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
+%{2.3ex \@plus.2ex}                % afterskip
 {\centering\normalfont\large\bfseries\MakeUppercase}} % style
 
 

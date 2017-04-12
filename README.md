@@ -1,6 +1,8 @@
 csas-latex
 ==========
 
+12/4/17: Chris's latest is tidied up (in his Arrowtooth branch), and I (Andy) am including some of it into the version here while I get Redbanded finally approved. We will then take Chris's as the standard one, and add anything from mine (probably just need commits from 12/4/17 onwards). 
+
 Need to incorporate Chris's latest version, and create a simpler example document. Putting some new (2017) tips and tricks at the bottom of this file. 
 
 Latex style file and template for CSAS Research Documents

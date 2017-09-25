@@ -1,11 +1,15 @@
 csas-latex
 ==========
 
-12/4/17: Chris's latest is tidied up (in his Arrowtooth branch), and I (Andy) am including some of it into the version here while I get Redbanded finally approved. We will then take Chris's as the standard one, and add anything from mine (probably just need commits from 12/4/17 onwards). 
+Now use my [csas-style repo](http://www.github.com/andrew-edwards/csas-style) which is forked from [Chris Grandin's](http://www.github.com/cgrandin/csas-style); check the [Network Graph](https://github.com/cgrandin/csas-style/network) for the latest version. The csas-latex repository started as just style files with examples, but now includes several assessments so is overly complex.
+
+Also moving the Tips and Tricks and Bibliography rules from below to the csas-style readme.md. 25/9/17.
+
+Done. 12/4/17: Chris's latest is tidied up (in his Arrowtooth branch), and I (Andy) am including some of it into the version here while I get Redbanded finally approved. We will then take Chris's as the standard one, and add anything from mine (probably just need commits from 12/4/17 onwards). 
 
 Need to incorporate Chris's latest version, and create a simpler example document. Putting some new (2017) tips and tricks at the bottom of this file. 
 
-Latex style file and template for CSAS Research Documents
+### Latex style file and template for CSAS Research Documents
 
 __Initial commit 19th September 2014, Andrew Edwards__
 
